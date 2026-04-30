@@ -80,6 +80,7 @@ umount /rpi
 3. Mount the USB partitions and restore the contents.  **Leave them mounted for now**:
 ```
 mount /dev/usb-rpi/rootfs rpi
+mkdir -p rpi/boot/firmware
 mount /dev/sdb1 rpi/boot/firmware
 tar -xvzf rpi.tar.gz -C rpi
 ```
